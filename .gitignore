@@ -34,12 +34,16 @@ local.properties
 *.keystore
 !debug.keystore
 .kotlin/
+*.apk
+*.aar
+/output.json
 
 # node.js
 #
 node_modules/
 npm-debug.log
 yarn-error.log
+*.log
 
 # fastlane
 #
@@ -73,3 +77,25 @@ yarn-error.log
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
+
+# Expo
+.expo/
+.expo-shared/
+
+# Miscellaneous
+*.swp
+*.swo
+*.tmp
+*.bak
+*.orig
+*.rej
+*.patch
+*.gz
+*.zip
+*.tar
+*.tgz
+*.7z
+
+# IDE-specific files
+.vscode/
+*.code-workspace
