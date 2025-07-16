@@ -1,8 +1,7 @@
-import {} from 'react-native'
 import { useState } from 'react';
 
-
 const useStateExample = () => {
+
   const [count, setCount] = useState(0);
 
   const increment = () => {
