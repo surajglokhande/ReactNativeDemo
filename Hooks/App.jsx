@@ -13,6 +13,16 @@ export default function App() {
         <View style={{ height: 10 }}/>
         <Button title="-" onPress={decrement} />
       </View>
+      <ChildView countValue={count}/>
+    </View>
+  );
+}
+
+const ChildView = (props) => {
+  return(
+    <View style={{alignItems: 'center' }}>
+      <Text style={{margin:20, fontSize: 30}}>Child View Counter</Text>
+      <Text style={{fontSize: 30}}>{props.countValue}</Text>
     </View>
   );
 }
