@@ -12,25 +12,25 @@ import { SafeAreaView, StyleSheet, Text } from "react-native";
 //     )
 // }
 
-const CustomComponent = () => (
-    <SafeAreaView style={styles.Component}>
-        <Text
-            style={styles.Text}>
-            This is Custom Component
-        </Text>
-    </SafeAreaView>
-)
+// const CustomComponent = () => (
+//     <SafeAreaView style={styles.Component}>
+//         <Text
+//             style={styles.Text}>
+//             This is Custom Component
+//         </Text>
+//     </SafeAreaView>
+// )
 
-// const CustomComponent = () => {
-//     return (
-//         <SafeAreaView style={styles.Component}>
-//             <Text
-//                 style={styles.Text}>
-//                 This is Custom Component
-//             </Text>
-//         </SafeAreaView>
-//     )
-// };
+const CustomComponent = () => {
+    return (
+        <SafeAreaView style={styles.Component}>
+            <Text
+                style={styles.Text}>
+                This is Custom Component
+            </Text>
+        </SafeAreaView>
+    )
+};
 
 // class CustomComponent extends React.Component {
 //     constructor(props) {
