@@ -1,5 +1,6 @@
 import React from "react";
 import { SafeAreaView, StyleSheet, Text } from "react-native";
+import RedioButton from "./RedioButton";
 
 // function CustomComponent() {
 //     return (
@@ -28,6 +29,7 @@ const CustomComponent = () => {
                 style={styles.Text}>
                 This is Custom Component
             </Text>
+            <RedioButton />
         </SafeAreaView>
     )
 };
