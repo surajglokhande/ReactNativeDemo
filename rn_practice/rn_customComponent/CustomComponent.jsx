@@ -1,6 +1,7 @@
 import React from "react";
-import { SafeAreaView, StyleSheet, Text } from "react-native";
+import { SafeAreaView, StyleSheet, Text, View } from "react-native";
 import RedioButton from "./RedioButton";
+import DynamicRedioButtons from "./DynamicRedioButtons";
 
 // function CustomComponent() {
 //     return (
@@ -23,13 +24,42 @@ import RedioButton from "./RedioButton";
 // )
 
 const CustomComponent = () => {
+
+    const redios = [
+        {
+            id: 1,
+            item: "Suraj"
+        },
+        {
+            id: 2,
+            item: "Sumedh"
+        },
+        {
+            id: 3,
+            item: "Dhiraj"
+        },
+        {
+            id: 4,
+            item: "Shweta"
+        },
+    ]
+
     return (
         <SafeAreaView style={styles.Component}>
             <Text
                 style={styles.Text}>
-                This is Custom Component
+                This is Custom Static Redio Component
             </Text>
-            <RedioButton />
+            <View>
+                <RedioButton />
+            </View>
+            <Text
+                style={styles.Text}>
+                This is Custom  Dynamic Redio Component
+            </Text>
+            <View>
+                <DynamicRedioButtons redioItems={redios} />
+            </View>
         </SafeAreaView>
     )
 };
