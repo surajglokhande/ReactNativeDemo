@@ -1,7 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { createContext, useEffect, useState } from 'react';
 import { View, StyleSheet, Text, Button } from 'react-native';
 import useStateExample from './UseState.jsx';
 import UseEffectDemo from './UseEffect.jsx';
+import UseContextComponent from './useContext.jsx';
+import UseCallbackDemo from './useCallback.jsx';
+
+export const ThemeContext = createContext(null)
 
 export default function App() {
   const { count, increment, decrement } = useStateExample();
@@ -37,6 +41,16 @@ export default function App() {
         </View>
         <View>
           {isHideChild ? null : <UseEffectDemo />}
+        </View>
+        <View>
+          <ThemeContext value='Dark'>
+            <UseContextComponent />
+          </ThemeContext>
+        </View>
+        <View>
+          <UseCallbackDemo>
+
+          </UseCallbackDemo>
         </View>
       </View>
     </View>
